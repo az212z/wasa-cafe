@@ -32,7 +32,7 @@ h1,h2,h3,h4{font-family:var(--fa-d);font-weight:300;line-height:1.2;letter-spaci
 .grain{position:fixed;inset:0;z-index:9000;pointer-events:none;opacity:.04;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
 #pre{position:fixed;inset:0;z-index:10000;background:var(--olive);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;transition:opacity .9s var(--ease),visibility .9s}
-#pre.done{opacity:0;visibility:hidden}
+#pre.done{opacity:0;visibility:hidden;display:none;pointer-events:none}
 #pre .pw{font-family:var(--fa-d);font-weight:300;font-size:clamp(50px,14vw,96px);color:var(--paper);opacity:0;transform:translateY(12px);animation:plin 1s var(--ease) .15s forwards}
 #pre small{font-family:var(--fd);font-style:italic;font-size:clamp(15px,4vw,21px);color:rgba(247,242,232,.82);opacity:0;animation:plin 1s var(--ease) .45s forwards}
 #pre .pb{width:100px;height:1px;background:rgba(247,242,232,.25);overflow:hidden;margin-top:6px}#pre .pb i{display:block;height:100%;width:0;background:var(--paper);animation:pbar 2.2s var(--ease) .3s forwards}
